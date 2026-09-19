@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "functions": {
+    "api/**/*.js": { "maxDuration": 60 }
+  },
+  "rewrites": [
+    { "source": "/v1/models", "destination": "/api/models" },
+    { "source": "/v1/chat/completions", "destination": "/api/chat/completions" }
+  ]
+}
